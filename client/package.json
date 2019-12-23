@@ -1,0 +1,23 @@
+{
+  "name": "nextjs",
+  "version": "4.0.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "latest",
+    "@material-ui/icons": "^4.5.1",
+    "clsx": "latest",
+    "isomorphic-unfetch": "^3.0.0",
+    "js-cookie": "^2.2.1",
+    "next": "latest",
+    "next-cookies": "^2.0.3",
+    "prop-types": "latest",
+    "react": "latest",
+    "react-dom": "latest"
+  },
+  "author": "Aldi Mustafri",
+  "scripts": {
+    "dev": "next dev -- -p 1001",
+    "build": "next build",
+    "start": "next start"
+  }
+}
