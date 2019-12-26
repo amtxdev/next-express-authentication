@@ -10,3 +10,4 @@ Next.js for client and Express.js for server. Authentication and Middleware with
 7. Migrate Sequelize PostgreSQL Database.
 8. Happy Develop.
 9. Run client port:1001 | server: 1000
+10. Happy Develop! :D

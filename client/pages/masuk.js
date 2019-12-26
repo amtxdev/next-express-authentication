@@ -61,7 +61,6 @@ export default function Masuk() {
 
     const email = userData.email;
     const password = userPwd.password;
-    // const url = "/api/login";
     const url = 'http://localhost:1000/autentikasi/masuk'
 
     try {
@@ -76,7 +75,6 @@ export default function Masuk() {
         await login({ token });
       } else {
         console.log("Gagal Login.");
-        // https://github.com/developit/unfetch#caveats
         let error = new Error(response.statusText);
         error.response = response;
         throw error;

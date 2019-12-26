@@ -9,7 +9,6 @@ export default async (req, res) => {
 
     try {
         const { token } = JSON.parse(auth)
-        // const url = `http://localhost:1000/akun/user/${token}`
         const url = 'http://localhost:1000/akun/user'
 
         const response = await fetch(url)
@@ -20,7 +19,6 @@ export default async (req, res) => {
             const data = Object.assign({}, { email: js.avatar_url }, js)
             return res.status(200).json({ data })
         } else {
-            // https://github.com/developit/unfetch#caveats
             const error = new Error(response.statusText)
             error.response = response
             throw error

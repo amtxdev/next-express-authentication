@@ -8,7 +8,6 @@ export default async (req, res) => {
     console.log('password', password)
     
     const url = 'http://localhost:1000/akun/user'
-    // const url = 'http://localhost:1000/akun/user'
 
     try {
         const response = await fetch(url)
@@ -17,7 +16,6 @@ export default async (req, res) => {
             const {id} = await response.json()
             return res.status(200).json({ token:id })
         } else {
-            // https://github.com/developit/unfetch#caveats
             const error = new Error(response.statusText)
             error.response = response
             throw error
